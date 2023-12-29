@@ -25,7 +25,7 @@
 <body <?php $this->helpers->bodyClasses($view); ?>>
 	<?php $this->checkSuspensionHeader(); ?>
 	<header>
-		<div id="header">
+		<div id="header" class="header-small">
 			<div class="header-con row flex">
 				<div class="left logo-holder">
 					<a href="home"><img src="public/images/content/logo.png" alt="Logo"></a>

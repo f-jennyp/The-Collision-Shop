@@ -4,22 +4,26 @@
 		<div class="row">
 			<h1>The Collision Shop Detroit’s Services</h1>
 
-			<div class="services-con">
-				<div class="box">
+			<div class="services-con flex">
+				<div class="box serv1">
 					<div class="title">Auto Body & Paint Repaint</div>
 				</div>
-			</div>
 
-			<div class="services-con">
-				<div class="box">
-					<div class="title">Collision Repair</div>
-					<p>We will put your vehicle back to pre-accident condition, structurally and cosmetically.</p>
+				<div class="box serv2">
+					<div class="serv2-con">
+						<div class="title">Collision Repair</div>
+						<p>We will put your vehicle back to pre-accident condition, structurally and cosmetically.</p>
+					</div>
+				</div>
+
+				<div class="box serv3">
+					<div class="title">Auto Glass Repair</div>
 				</div>
 			</div>
 
-			<div class="services-con">
-				<div class="box">
-					<div class="title">Auto Glass Repair</div>
+			<div class="btn-holder">
+				<div class="btn">
+					<a href="<?php echo URL ?>contact#content">View all offered services</a>
 				</div>
 			</div>
 
@@ -28,33 +32,40 @@
 
 	<div id="about">
 		<div class="row">
-			<div class="right">
-				<div class="img-holder">
-					<img src="public/images/content/" alt="">
+			<div class="about-con flex">
+				<div class="left">
+					<div class="img-holder">
+						<img src="public/images/content/about-img.png" alt="">
+					</div>
 				</div>
-			</div>
 
-			<div class="left">
-				<h1>About The Collision Shop Detroit</h1>
-				<p>The Collision Shop has been in business for over 28 years. We have grown to the largest Auto Body &
-					Paint repair facility serving the Greater Detroit area in Michigan. With multiple locations
-					conveniently located throughout the metro Detroit area, any where that you work or live you are less
-					than twenty minutes away from any one of our locations.
+				<div class="right text-right">
+					<h1>About The Collision Shop Detroit</h1>
+					<p>The Collision Shop has been in business for over 28 years. We have grown to the largest Auto Body
+						&
+						Paint repair facility serving the Greater Detroit area in Michigan. With multiple locations
+						conveniently located throughout the metro Detroit area, any where that you work or live you are
+						less
+						than twenty minutes away from any one of our locations.
+						<br> <br>
+						We try to accommodate our customers the best way that we know how and we will provide pick up
+						and
+						drop off at your home or work if necessary. The Collision Shop Detroit is equipped with
+						state-of-the-art auto body equipment necessary to repair the new complex vehicles of today.
+						<br> <br>
+						Our customers have come to know and trust The Collision Shop Detroit of Detroit, MI for saving
+						their
+						insurance deductible or providing a free loaner vehicle.
+						<br> <br>
+						A program that we fist started in order to help our customers save time and money with their
+						repairs. Coupled with our Lifetime Warranty, why would you have your vehicle repaired any where
+						else?
+					</p>
 
-					We try to accommodate our customers the best way that we know how and we will provide pick up and
-					drop off at your home or work if necessary. The Collision Shop Detroit is equipped with
-					state-of-the-art auto body equipment necessary to repair the new complex vehicles of today.
-
-					Our customers have come to know and trust The Collision Shop Detroit of Detroit, MI for saving their
-					insurance deductible or providing a free loaner vehicle.
-
-					A program that we fist started in order to help our customers save time and money with their
-					repairs. Coupled with our Lifetime Warranty, why would you have your vehicle repaired any where
-					else?</p>
-
-				<div class="btn-holder">
-					<div class="btn">
-						<a href="<?php echo URL ?>contact#content">Contact The Collision Shop Detroit</a>
+					<div class="btn-holder">
+						<div class="btn">
+							<a href="<?php echo URL ?>contact#content">Contact The Collision Shop Detroit</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -127,7 +138,7 @@
 		</div>
 	</div>
 
-	<div id="testimomials">
+	<div id="testimonials">
 		<div class="row">
 			<h2>Customer Reviews</h2>
 

@@ -110,7 +110,6 @@ h1 {
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2;
-  color: #fff
 }
 
 h2 {
@@ -118,7 +117,6 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
-  color: #fff
 }
 
 p,
@@ -251,6 +249,7 @@ img {
 
 #header .logo-holder img {
   max-width: 489px;
+  margin-top: 39px;
 }
 
 #header .right {
@@ -296,8 +295,11 @@ nav ul li a {
 
 #header .comp-info {
   justify-content: flex-end;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
+  align-items: center;
+  gap: 24px;
+  margin-top: 23px;
 }
 
 #header .comp-info .flex {
@@ -308,6 +310,13 @@ nav ul li a {
 #header .comp-info .address img {
   max-width: 22px;
 }
+
+#header .comp-info .email {
+  border: 2px solid #fff;
+  padding: 15px 25px;
+  border-radius: 50px;
+}
+
 
 /*-----------------------------------------------BANNER-----------------------------------------------*/
 #banner {
@@ -354,9 +363,9 @@ nav ul li a {
 
 #ban-bottom {
   position: absolute;
-  top: 28%;
+  top: 22%;
   right: 0;
-  transform: translate(0, -45%);
+  transform: translate(0, -50%);
   width: 100%;
   max-width: 851px;
 }
@@ -384,7 +393,8 @@ nav ul li a {
   width: 100%;
   max-width: 720px;
   margin: auto;
-  padding: 23px 0;
+  min-height: 182px;
+  align-items: center;
 }
 
 #ban-bottom .box {
@@ -404,28 +414,178 @@ nav ul li a {
 }
 
 /*-----------------------------------------------CONTENT-----------------------------------------------*/
-/*WELCOME*/
-#welcome {
-  background: url('../images/common/welcome.jpg')no-repeat top;
-  -webkit-background-size: cover;
-  background-size: cover;
-  padding: 120px 0 34px
-}
-
-#welcome .btn {}
-
-
 /*SERVICES*/
 #services {
-  background: url('../images/common/services.jpg')no-repeat top;
+  background: url('../images/content/bg-services.jpg')no-repeat top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 998px;
+}
+
+#services .row {
+  padding-top: 132px;
+}
+
+#services h1 {
+  color: #04195F;
+  margin-bottom: 51px;
+}
+
+#services .services-con {
+  width: 100%;
+  max-width: 1362px;
+  margin: auto;
+}
+
+#services .box {
+  height: 100%;
+  width: 100%;
+  max-width: 428px;
+  min-height: 541px;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  justify-content: center;
+  padding-bottom: 39px;
+}
+
+#services .serv1 {
+  background: url('../images/content/service-img1.jpg')no-repeat top;
   -webkit-background-size: cover;
   background-size: cover;
 }
+
+#services .serv2 {
+  background: url('../images/content/service-img2.jpg')no-repeat top;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#services .serv3 {
+  background: url('../images/content/service-img3.jpg')no-repeat top;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#services .title {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+#services .serv2-con .title {
+  margin-bottom: 9px;
+}
+
+#services .serv2-con p {
+  width: 100%;
+  max-width: 320px;
+  line-height: 1.7;
+}
+
+#services .btn-holder {
+  margin-top: 54px;
+}
+
+
+
+/* about */
+#about {
+  background: url('../images/content/bg-about.jpg')no-repeat top left;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 1000px;
+  align-items: center;
+  display: flex;
+}
+
+#about .about-con {
+  gap: 82px;
+}
+
+#about .left {
+  display: flex;
+  align-items: center;
+}
+
+#about .left .img-holder {
+  max-width: 645px;
+}
+
+#about .right {
+  width: 100%;
+  max-width: 702px;
+}
+
+#about h1 {
+  color: #CA202D;
+  width: 100%;
+  max-width: 519px;
+  margin-left: auto;
+  margin-bottom: 19px;
+}
+
+#about p {
+  line-height: 1.7;
+}
+
+#about .btn-holder {
+  margin-top: 49px;
+}
+
+#about .btn {
+  margin: 0 0 0 auto;
+}
+
+
+/* section */
+#section {
+  background: url('../images/content/bg-section.jpg')no-repeat top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 503px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+#section p {
+  font-size: 18px;
+  width: 100%;
+  max-width: 714px;
+  margin: 19px auto 55px;
+}
+
 
 
 /*gallery*/
+#gallery {
+  background: url('../images/content/bg-gallery.jpg')no-repeat top right;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 1000px;
+  align-items: center;
+  display: flex;
+}
+
+#gallery h1 {
+  color: #CA202D;
+}
+
 #gallery img {
-  width: 32%;
+  width: 100%;
   display: block;
   margin-bottom: 30px
 }
@@ -437,9 +597,16 @@ nav ul li a {
 
 /*testimonials*/
 #testimonials {
-  background: url('../images/common/testimonials.jpg')no-repeat top;
+  background: url('../images/content/bg-testimonials.jpg')no-repeat top;
   -webkit-background-size: cover;
   background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 504px;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
 #testimonials p.auth {}
