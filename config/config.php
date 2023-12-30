@@ -7,7 +7,7 @@
 			"phone" =>  "(313) 541-2742", 		  //either no format or dashed format
 			"email" => "email@domain.com",   //by default is used as recipient email  
 			"address" => "16160 Telegraph Rd Detroit, MI 48219", 
-			
+			"hours" => "Monday - Friday 8:00 AM - 6:00 PM <br> Saturday 9:00 AM - 3:00 PM <br> Sunday Closed",
 			// email related
 			"site_key" => "6Lc23x0UAAAAACGIT_C0_gyWO3bkj6Q5n-f_pqbe",
 			"secret_key" => "6Lc23x0UAAAAAEhw1XBprAmlFaRVmS7-PZBmVwV5",
