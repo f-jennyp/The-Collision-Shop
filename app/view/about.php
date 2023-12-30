@@ -2,13 +2,13 @@
 	<div id="about">
 		<div class="row">
 			<div class="about-con flex">
-				<div class="left">
+				<div class="left reveal fade-left">
 					<div class="img-holder">
 						<img src="public/images/content/about-img.png" alt="">
 					</div>
 				</div>
 
-				<div class="right text-right">
+				<div class="right text-right reveal fade-right">
 					<h1>About The Collision Shop Detroit</h1>
 					<p>The Collision Shop has been in business for over 28 years. We have grown to the largest Auto Body
 						&
@@ -32,7 +32,7 @@
 					</p>
 
 					<div class="btn-holder">
-						<div class="btn">
+						<div class="btn hvr-float hvr-sweep-to-top">
 							<a href="<?php echo URL ?>contact#content">Contact The Collision Shop Detroit</a>
 						</div>
 					</div>

@@ -121,7 +121,9 @@ h2 {
 
 p,
 ul,
-nav ul li a {
+nav ul li a,
+.dropdown .dropbtn,
+.dropdown-content a {
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -264,9 +266,10 @@ nav ul li {
   padding: 20px 0 0 0;
 }
 
-nav ul li a {
+nav ul li a,
+.dropdown .dropbtn {
   font-weight: 700;
-  /* color: #fff; */
+  color: #fff;
 }
 
 .nav-link {
@@ -331,7 +334,55 @@ nav ul li a {
   font-weight: 700;
 }
 
+#header .dropdown {
+  float: left;
+  overflow: hidden;
+}
 
+.dropdown .dropbtn {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {}
+
+.dropdown:hover>.dropbtn {}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  padding: 0 18px;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  line-height: 46px;
+  color: #000;
+  font-weight: 600;
+}
+
+.dropdown-content a:hover {
+  font-weight: 900;
+  color: #CC0000;
+}
+
+.show {
+  display: block;
+
+}
 
 /*-----------------------------------------------BANNER-----------------------------------------------*/
 #banner {
@@ -920,16 +971,48 @@ form .alert-danger {
 
 /*---------------------------------------inner pages-------------------------------------------*/
 .inner #content {
-  /* min-height: 400px;
+  min-height: 400px;
   padding: 40px 0;
-  max-width: 800px;
-  margin: 0 auto */
+  max-width: 1300px;
+  margin: 0 auto
+}
+
+.inner #content h1,
+.inner #content h2 {
+  color: #CA202D;
+  margin-bottom: 35px;
+}
+
+.inner #content p {
+  line-height: 1.7;
+}
+
+.inner #content .btn-holder {
+  margin-top: 35px;
+}
+
+.inner #banner {
+  min-height: 748px;
+  align-items: end;
+  padding-bottom: 39px;
 }
 
 .inner #ban-bottom {
-  top: 29.2%;
+  display: none;
 }
 
+.inner #about,
+.inner #services,
+.inner #testimonials,
+.inner #gallery,
+.inner #contact {
+  background: none;
+  color: #000;
+}
+
+.inner #contact .box {
+  margin: 0;
+}
 
 /*inner gallery*/
 .img-responsive {
@@ -1105,6 +1188,7 @@ form .alert-danger {
     transform: translateX(100px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -1120,7 +1204,7 @@ form .alert-danger {
   transition: all 0.3s ease-in-out;
 }
 
-.con-hvr-underline:before{
+.con-hvr-underline:before {
   content: '';
   background: #fff;
   display: block;
@@ -1130,16 +1214,16 @@ form .alert-danger {
   width: 0;
   height: 3px;
   transition: all 0.3s ease-in-out;
-  
+
 }
 
 .con-hvr-underline:hover {
   background-position: 0;
- }
- 
- .con-hvr-underline:hover::before{
-   width: 100%;
- }
+}
+
+.con-hvr-underline:hover::before {
+  width: 100%;
+}
 
 
 

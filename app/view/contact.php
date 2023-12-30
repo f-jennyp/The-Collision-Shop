@@ -1,6 +1,6 @@
 <div id="content">
 	<div id="contact">
-		<div class="box row">
+		<div class="box row reveal fade-bottom">
 			<div class="contact-con">
 				<div class="foreword">KEEP IN TOUCH</div>
 				<h1>Contact Form</h1>
@@ -46,7 +46,7 @@
 
 						<div class="g-recaptcha"></div>
 
-						<button type="submit" class="ctcBtn btn" disabled>Submit Form</button>
+						<button type="submit" class="ctcBtn btn hvr-grow hvr-sweep-to-top" disabled>Submit Form</button>
 					</div>
 				</form>
 			</div>

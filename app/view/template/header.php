@@ -38,17 +38,37 @@
 						<nav>
 							<!-- <a href="#" id="pull"><strong>MENU</strong></a> -->
 							<ul>
-								<li <?php $this->helpers->isActiveMenu("home"); ?>><a class="nav-link nav-link-fade-up" href="<?php echo URL ?>">HOME</a>
+								<li <?php $this->helpers->isActiveMenu("home"); ?>><a class="nav-link nav-link-fade-up"
+										href="<?php echo URL ?>">HOME</a>
 								</li>
 								<li <?php $this->helpers->isActiveMenu("about"); ?>><a class="nav-link nav-link-fade-up"
 										href="<?php echo URL ?>about#content">ABOUT US</a></li>
-								<li <?php $this->helpers->isActiveMenu("services"); ?>><a class="nav-link nav-link-fade-up"
-										href="<?php echo URL ?>services#content">SERVICES</a></li>
-								<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a class="nav-link nav-link-fade-up"
+
+								<li class="dropdown">
+									<button class="dropbtn nav-link nav-link-fade-up" onclick="myFunction()">SERVICES
+										<i class="fa fa-caret-down"></i>
+									</button>
+									<div class="dropdown-content" id="myDropdown">
+										<a href="<?php echo URL ?>services#content">SERVICES</a>
+										<a href="<?php echo URL ?>auto-body-paint-repair#content">AUTO BODY & PAINT
+											REPAIR</a>
+										<a href="<?php echo URL ?>collisiom-repair#content">COLLISION REPAIR</a>
+										<a href="<?php echo URL ?>auto-glass-repair#content">AUTO GLASS REPAIR</a>
+										<a href="<?php echo URL ?>fleet-repair#content">FLEET REPAIR</a>
+										<a href="<?php echo URL ?>auto-detailing#content">AUTO DETAILING</a>
+										<a href="<?php echo URL ?>auto-frame-repair#content">AUTO FRAME REPAIR</a>
+									</div>
+								</li>
+
+
+								<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
+										class="nav-link nav-link-fade-up"
 										href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
-								<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a class="nav-link nav-link-fade-up"
+								<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
+										class="nav-link nav-link-fade-up"
 										href="<?php echo URL ?>gallery#content">GALLERY</a></li>
-								<li <?php $this->helpers->isActiveMenu("contact"); ?>><a class="nav-link nav-link-fade-up"
+								<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
+										class="nav-link nav-link-fade-up"
 										href="<?php echo URL ?>contact#content">CONTACT US</a></li>
 							</ul>
 						</nav>

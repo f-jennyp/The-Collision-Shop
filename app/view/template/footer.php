@@ -146,8 +146,15 @@
 			});
 		})
 
-		// EFFECTS / ANIMATION
-		function reveal() {
+	
+	</script>
+
+<?php endif; ?>
+
+<script>
+
+	// EFFECTS / ANIMATION
+	function reveal() {
 			var reveals = document.querySelectorAll(".reveal");
 
 			for (var i = 0; i < reveals.length; i++) {
@@ -165,42 +172,57 @@
 
 		window.addEventListener("scroll", reveal);
 
+	// HEADER FIXED
+	document.addEventListener("DOMContentLoaded", function () {
+		var header = document.getElementById("header");
+		var logoImg = document.querySelector("#header .logo-holder img");
 
-		document.addEventListener("DOMContentLoaded", function () {
-			var header = document.getElementById("header");
-			var logoImg = document.querySelector("#header .logo-holder img");
-
-			function updateHeader() {
-				if (window.scrollY > 0) {
-					header.classList.add("fixed");
-				} else {
-					header.classList.remove("fixed");
-				}
-
-				// Resize logo image based on scroll position
-				var maxImgWidth = 250;
-				var scrolledPercentage = Math.min(1, window.scrollY / 100); // You can adjust the factor based on your design
-				var newImgWidth = maxImgWidth + (1 - scrolledPercentage) * (logoImg.width - maxImgWidth);
-				logoImg.style.maxWidth = newImgWidth + "px";
+		function updateHeader() {
+			if (window.scrollY > 0) {
+				header.classList.add("fixed");
+			} else {
+				header.classList.remove("fixed");
 			}
 
-			// Initial call to set header and image size
+			// Resize logo image based on scroll position
+			var maxImgWidth = 250;
+			var scrolledPercentage = Math.min(1, window.scrollY / 100); // You can adjust the factor based on your design
+			var newImgWidth = maxImgWidth + (1 - scrolledPercentage) * (logoImg.width - maxImgWidth);
+			logoImg.style.maxWidth = newImgWidth + "px";
+		}
+
+		// Initial call to set header and image size
+		updateHeader();
+
+		window.addEventListener("scroll", function () {
 			updateHeader();
 
-			window.addEventListener("scroll", function () {
-				updateHeader();
-
-				// Check if scroll position is at the top
-				if (window.scrollY === 0) {
-					// Reset the image size when back at the top
-					logoImg.style.maxWidth = "489px"; // Adjust the original max-width value
-				}
-			});
+			// Check if scroll position is at the top
+			if (window.scrollY === 0) {
+				// Reset the image size when back at the top
+				logoImg.style.maxWidth = "489px"; // Adjust the original max-width value
+			}
 		});
+	});
 
-	</script>
+	// DROPDOWN 
+	function myFunction() {
+		var dropdownContent = document.getElementById("myDropdown");
+		dropdownContent.classList.toggle("show");
+	}
 
-<?php endif; ?>
+	window.onclick = function (e) {
+		if (!e.target.matches('.dropbtn')) {
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			for (var i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
+</script>
 
 
 <a class="cta" href="tel:<?php $this->info("phone"); ?>"><span
