@@ -49,10 +49,9 @@
 										<i class="fa fa-caret-down"></i>
 									</button>
 									<div class="dropdown-content" id="myDropdown">
-										<a href="<?php echo URL ?>services#content">SERVICES</a>
 										<a href="<?php echo URL ?>auto-body-paint-repair#content">AUTO BODY & PAINT
 											REPAIR</a>
-										<a href="<?php echo URL ?>collisiom-repair#content">COLLISION REPAIR</a>
+										<a href="<?php echo URL ?>collision-repair#content">COLLISION REPAIR</a>
 										<a href="<?php echo URL ?>auto-glass-repair#content">AUTO GLASS REPAIR</a>
 										<a href="<?php echo URL ?>fleet-repair#content">FLEET REPAIR</a>
 										<a href="<?php echo URL ?>auto-detailing#content">AUTO DETAILING</a>

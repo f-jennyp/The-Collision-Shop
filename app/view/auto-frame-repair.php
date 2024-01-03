@@ -9,30 +9,42 @@
             <div class="content">
                 <div class="flex">
                     <div class="right">
+                        <h3> When a vehicle has been involved in an accident, the Frame/Unitized body of the vehicle may
+                            have been compromised in the accident.</h3>
                         <p>
-                            When a vehicle has been involved in an accident, the Frame/Unitized body of the vehicle may
-                            have been compromised in the accident.
-                            The Collision Shop Detroit has State-certified technicians to analyze the Frame/Unibody of
+                            <strong>The Collision Shop Detroit</strong> has State-certified technicians to analyze the
+                            Frame/Unibody of
                             your vehicle to determine the extent of damage.
-
-                            The Collision Shop Detroit has the latest equipment necessary to straighten the vehicle to
-                            pre-accident condition. The Collision Shop Detroit understands these Frame Repair are
+                        </p>
+                        <p>
+                            <strong>The Collision Shop Detroit</strong> has the latest equipment necessary to straighten
+                            the vehicle to
+                            pre-accident condition. <strong>The Collision Shop Detroit</strong> understands these Frame
+                            Repair are
                             critical in that the Frame/Unibody must be brought back to manufacturer's specification
                             before the outer sheet metal can be replaced or repaired.
-
-                            With the Frame/Unibody repaired, The Collision Shop Detroit will align all four wheels of
+                        </p>
+                        <p>
+                            With the Frame/Unibody repaired, <strong>The Collision Shop Detroit</strong> will align all
+                            four wheels of
                             the vehicle to ensure that the car will steer straight and track properly. After the wheel
-                            alignment is complete each vehicle is test driven by The Collision Shop Detroit to ensure
-                            the proper function and handling of the vehicle. The Collision Shop Detroit then offers a
+                            alignment is complete each vehicle is test driven by <strong>The Collision Shop
+                                Detroit</strong> to ensure
+                            the proper function and handling of the vehicle. <strong>The Collision Shop Detroit</strong>
+                            then offers a
                             lifetime repair warranty on all work performed.
-
-                            Contact us today and let us show you how easy it is to have your vehicle repaired at The
-                            Collision Shop Detroit. (313) 541-2742
+                        </p>
+                        <p>
+                            Contact us today and let us show you how easy it is to have your vehicle repaired at
+                            <strong>The Collision Shop Detroit. <a class="phone"
+                                    href="tel:<?php $this->info("phone"); ?>">
+                                    <?php $this->info("phone"); ?>
+                                </a></strong>
                         </p>
                     </div>
 
                     <div class="left">
-                        <img src="public/images/content/" alt="">
+                        <img src="public/images/content/auto-frame-repair.jpg" alt="">
                     </div>
                 </div>
 

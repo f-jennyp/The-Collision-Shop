@@ -5,20 +5,27 @@
 			<h1>The Collision Shop Detroit’s Services</h1>
 
 			<div class="services-con flex">
-				<div class="box serv1 hvr-grow-shadow">
-					<div class="title">Auto Body & Paint Repaint</div>
-				</div>
-
-				<div class="box serv2 hvr-grow-shadow">
-					<div class="serv2-con">
-						<div class="title">Collision Repair</div>
-						<p>We will put your vehicle back to pre-accident condition, structurally and cosmetically.</p>
+				<a href="<?php echo URL ?>auto-body-paint-repair#content">
+					<div class="box serv1 hvr-grow-shadow">
+						<div class="title">Auto Body & Paint Repaint</div>
 					</div>
-				</div>
+				</a>
 
-				<div class="box serv3 hvr-grow-shadow">
-					<div class="title">Auto Glass Repair</div>
-				</div>
+				<a href="<?php echo URL ?>collision-repair#content">
+					<div class="box serv2 hvr-grow-shadow">
+						<div class="serv2-con">
+							<div class="title">Collision Repair</div>
+							<p>We will put your vehicle back to pre-accident condition, structurally and cosmetically.
+							</p>
+						</div>
+					</div>
+				</a>
+
+				<a href="<?php echo URL ?>auto-glass-repair#content">
+					<div class="box serv3 hvr-grow-shadow">
+						<div class="title">Auto Glass Repair</div>
+					</div>
+				</a>
 			</div>
 
 			<div class="btn-holder">

@@ -50,8 +50,22 @@
 							</li>
 							<li <?php $this->helpers->isActiveMenu("about"); ?>><a class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>about#content">ABOUT US</a></li>
-							<li <?php $this->helpers->isActiveMenu("services"); ?>><a class="nav-link nav-link-fade-up"
-									href="<?php echo URL ?>services#content">SERVICES</a></li>
+
+							<li class="dropup">
+								<button class="dropupbtn nav-link nav-link-fade-up" onclick="myFunction2()">SERVICES
+									<i class="fa fa-caret-up"></i>
+								</button>
+								<div class="dropup-content" id="myDropup">
+									<a href="<?php echo URL ?>auto-body-paint-repair#content">AUTO BODY & PAINT
+										REPAIR</a>
+									<a href="<?php echo URL ?>collision-repair#content">COLLISION REPAIR</a>
+									<a href="<?php echo URL ?>auto-glass-repair#content">AUTO GLASS REPAIR</a>
+									<a href="<?php echo URL ?>fleet-repair#content">FLEET REPAIR</a>
+									<a href="<?php echo URL ?>auto-detailing#content">AUTO DETAILING</a>
+									<a href="<?php echo URL ?>auto-frame-repair#content">AUTO FRAME REPAIR</a>
+								</div>
+							</li>
+
 							<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
 									class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
@@ -146,7 +160,7 @@
 			});
 		})
 
-	
+
 	</script>
 
 <?php endif; ?>
@@ -155,22 +169,22 @@
 
 	// EFFECTS / ANIMATION
 	function reveal() {
-			var reveals = document.querySelectorAll(".reveal");
+		var reveals = document.querySelectorAll(".reveal");
 
-			for (var i = 0; i < reveals.length; i++) {
-				var windowHeight = window.innerHeight;
-				var elementTop = reveals[i].getBoundingClientRect().top;
-				var elementVisible = 150;
+		for (var i = 0; i < reveals.length; i++) {
+			var windowHeight = window.innerHeight;
+			var elementTop = reveals[i].getBoundingClientRect().top;
+			var elementVisible = 150;
 
-				if (elementTop < windowHeight - elementVisible) {
-					reveals[i].classList.add("active");
-				} else {
-					reveals[i].classList.remove("active");
-				}
+			if (elementTop < windowHeight - elementVisible) {
+				reveals[i].classList.add("active");
+			} else {
+				reveals[i].classList.remove("active");
 			}
 		}
+	}
 
-		window.addEventListener("scroll", reveal);
+	window.addEventListener("scroll", reveal);
 
 	// HEADER FIXED
 	document.addEventListener("DOMContentLoaded", function () {
@@ -205,10 +219,10 @@
 		});
 	});
 
-	// DROPDOWN 
+	// DROPDOWN SERVICES
 	function myFunction() {
 		var dropdownContent = document.getElementById("myDropdown");
-		dropdownContent.classList.toggle("show");
+		dropdownContent.classList.toggle("show-down");
 	}
 
 	window.onclick = function (e) {
@@ -216,8 +230,26 @@
 			var dropdowns = document.getElementsByClassName("dropdown-content");
 			for (var i = 0; i < dropdowns.length; i++) {
 				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-					openDropdown.classList.remove('show');
+				if (openDropdown.classList.contains('show-down')) {
+					openDropdown.classList.remove('show-down');
+				}
+			}
+		}
+	}
+
+	// DROPUP FOOTER SERVICES
+	function myFunction2() {
+		var dropupContent = document.getElementById("myDropup");
+		dropupContent.classList.toggle("show-up");
+	}
+
+	window.onclick = function (e) {
+		if (!e.target.matches('.dropupbtn')) {
+			var dropups = document.getElementsByClassName("dropup-content");
+			for (var i = 0; i < dropup.length; i++) {
+				var openDropup = dropups[i];
+				if (openDropup.classList.contains('show-up')) {
+					openDropup.classList.remove('show-up');
 				}
 			}
 		}

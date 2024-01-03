@@ -9,18 +9,22 @@
             <div class="content">
                 <div class="flex">
                     <div class="right">
+                        <h3>Each vehicle which is repaired by <strong>The Collision Shop Detroit</strong> receives a
+                            complimentary wash before delivery.</h3>
                         <p>
-                            Each vehicle which is repaired by The Collision Shop Detroit receives a complimentary wash
-                            before delivery.
                             Our customers appreciate the quality of our repairs and a clean vehicle.
-
-                            Contact us today and let us show you how easy it is to have your vehicle repaired at The
-                            Collision Shop Detroit. (313) 541-2742
+                        </p>
+                        <p>
+                            Contact us today and let us show you how easy it is to have your vehicle repaired at
+                            <strong>The Collision Shop Detroit. <a class="phone"
+                                    href="tel:<?php $this->info("phone"); ?>">
+                                    <?php $this->info("phone"); ?>
+                                </a></strong>
                         </p>
                     </div>
 
                     <div class="left">
-                        <img src="" alt="">
+                        <img src="public/images/content/auto-detailing.jpg" alt="">
                     </div>
                 </div>
 
