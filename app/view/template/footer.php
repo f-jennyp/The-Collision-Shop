@@ -76,31 +76,32 @@
 						</ul>
 					</nav>
 				</div>
-				<nav>
 			</div>
-		</div>
 
-		<div class="copyrights">
-			<p class="copy">
-				©
-				<?php echo date("Y"); ?>.
-				<?php $this->info("company_name"); ?>. ALL RIGHTS RESERVED.
-				<?php if ($this->siteInfo['policy_link']): ?>
-					<a href="<?php $this->info("policy_link"); ?>">Privacy Policy</a>.
-				<?php endif ?>
-			</p>
-			<p class="techno">
-				<a href="http://technodreamoutsourcing.com/">Web Design</a> Done by <img class="lazy loaded"
-					src="public/images/hd-logo.png" alt="">
-			</p>
+
+			<div class="copyrights">
+				<p class="copy">
+					©
+					<?php echo date("Y"); ?>.
+					<?php $this->info("company_name"); ?>. ALL RIGHTS RESERVED.
+					<?php if ($this->siteInfo['policy_link']): ?>
+						<a href="<?php $this->info("policy_link"); ?>">Privacy Policy</a>.
+					<?php endif ?>
+				</p>
+				<p class="techno">
+					<a href="http://technodreamoutsourcing.com/">Web Design</a> Done by <img class="lazy loaded"
+						src="public/images/hd-logo.png" alt="">
+				</p>
+			</div>
 		</div>
 	</div>
 </footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="public/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="public/scripts/jquery.pajinate.js"></script>
 
 <script src="<?php echo URL; ?>public/scripts/sendform.js" data-view="<?php echo $view; ?>" id="sendform"></script>
 <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  -->
@@ -246,7 +247,7 @@
 	window.onclick = function (e) {
 		if (!e.target.matches('.dropupbtn')) {
 			var dropups = document.getElementsByClassName("dropup-content");
-			for (var i = 0; i < dropup.length; i++) {
+			for (var i = 0; i < dropups.length; i++) {
 				var openDropup = dropups[i];
 				if (openDropup.classList.contains('show-up')) {
 					openDropup.classList.remove('show-up');
@@ -254,8 +255,15 @@
 			}
 		}
 	}
-</script>
 
+	// TESTIMONIALS
+	$(document).ready(function () {
+		$('#testi1').pajinate({
+			num_page_links_to_display: 3,
+			items_per_page: 10
+		});
+	})
+</script>
 
 <a class="cta" href="tel:<?php $this->info("phone"); ?>"><span
 		style="display: block; width: 1px; height: 1px; overflow: hidden;">Call To Action Button</span></a>

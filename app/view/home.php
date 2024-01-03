@@ -204,9 +204,12 @@
 							</label>
 						</div>
 
-						<div class="g-recaptcha"></div>
+						<div class="flex">
+							<div class="g-recaptcha"></div>
 
-						<button type="submit" class="ctcBtn btn hvr-grow hvr-sweep-to-top" disabled>Submit Form</button>
+							<button type="submit" class="ctcBtn btn hvr-grow hvr-sweep-to-top" disabled>Submit
+								Form</button>
+						</div>
 					</div>
 				</form>
 			</div>

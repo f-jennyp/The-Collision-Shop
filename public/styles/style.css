@@ -441,6 +441,10 @@ nav ul li a,
   top: 12%;
   right: 0;
   transform: translate(0, 50%);
+  -webkit-transform: translate(0, 50%);
+  -moz-transform: translate(0, 50%); 
+  -ms-transform: translate(0, 50%); 
+  -o-transform: translate(0, 50%); 
   width: 100%;
   max-width: 851px;
 }
@@ -1055,7 +1059,22 @@ form .alert-danger {
 }
 
 .inner #content .content .flex {
-  gap: 50px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.inner #content .content .right {
+  width: 100%;
+  max-width: 830px;
 }
 
 .inner #content p {
@@ -1067,7 +1086,7 @@ form .alert-danger {
   color: #002fa5;
 }
 
-.inner img {
+.inner .content .left img {
   width: auto;
   max-width: 400px;
   box-shadow: 21px 24px 15px -17px rgba(0, 0, 0, 0.45);
@@ -1099,6 +1118,10 @@ form .alert-danger {
 
 .inner #testimonials .row {
   margin: 0 auto;
+}
+
+.inner #testimonials li {
+  list-style: none;
 }
 
 /* .inner #testimonials .flex {
@@ -1341,8 +1364,14 @@ form .alert-danger {
 @media screen and (max-width: 1440px) {}
 
 
-/*1200*/
-@media screen and (max-width: 1439px) {}
+
+@media screen and (max-width: 1249px) {
+  .inner #content .content .flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 48px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   body {
