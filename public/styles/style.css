@@ -442,9 +442,9 @@ nav ul li a,
   right: 0;
   transform: translate(0, 50%);
   -webkit-transform: translate(0, 50%);
-  -moz-transform: translate(0, 50%); 
-  -ms-transform: translate(0, 50%); 
-  -o-transform: translate(0, 50%); 
+  -moz-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+  -o-transform: translate(0, 50%);
   width: 100%;
   max-width: 851px;
 }
@@ -1465,7 +1465,6 @@ form .alert-danger {
 
 /*425*/
 @media screen and (max-width: 767px) {}
-
 
 /*375*/
 @media screen and (max-width: 424px) {}

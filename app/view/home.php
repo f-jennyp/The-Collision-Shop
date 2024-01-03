@@ -30,7 +30,7 @@
 
 			<div class="btn-holder">
 				<div class="btn hvr-float hvr-sweep-to-top">
-					<a href="<?php echo URL ?>contact#content">View all offered services</a>
+					<a>View all offered services</a>
 				</div>
 			</div>
 
