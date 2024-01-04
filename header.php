@@ -4,24 +4,22 @@
 
 <head>
 	<!-- <meta charset="utf-8">
-	<meta name="viewport" content="width=1920" /> -->
-	<!-- <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
 
 	<?php $this->helpers->seo($view); ?>
 	<link rel="icon" href="public/images/favicon.png" type="image/x-icon">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+		type='text/css'>
 
 	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 	<link href="<?php echo URL; ?>public/styles/style.css" rel="stylesheet">
-	<!-- <link href="<?php echo URL; ?>public/styles/hover.css" rel="stylesheet"> -->
+	<link href="<?php echo URL; ?>public/styles/hover.css" rel="stylesheet">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 	<link rel="stylesheet" href="public/fancybox/source/jquery.fancybox.css" media="screen" />
-	
+	<link rel="stylesheet" href="public/fancybox/source/jquery.fancybox-1.3.4.css" media="screen" />
 	<?php $this->helpers->analytics(); ?>
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-		integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

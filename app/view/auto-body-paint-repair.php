@@ -17,7 +17,7 @@
                             Shop Detroit refinishes, all repaired or replaced areas of your vehicle with a factory
                             package paint, this is the same paint that was used at the factory when the vehicle was
                             originally
-                            manufactured. This way <span class="bold-text">The Collision Shop Detroit</span> ensures the
+                            manufactured. This way <strong>The Collision Shop Detroit</strong> ensures the
                             same paint color,
                             quality and texture as the original factory finish.
                         </p>
@@ -31,16 +31,18 @@
                             by the
                             manufacturer.
                             <strong>The Collision Shop Detroit</strong> will then apply the clear coat
-                            urethane that gives shine and durability to the paint. This is the only way <span
-                                class="bold-text">The Collision Shop Detroit</span>
+                            urethane that gives shine and durability to the paint. This is the only way <strong>The
+                                Collision Shop Detroit</strong>
                             can ensure that the paint will last for the life of the vehicle.
                         </p>
                         <p>
                             <strong>The Collision Shop Detroit</strong> is so sure of the quality of the
                             repair that we guarantee our workmanship for as long as you own your vehicle. With all
-                            <strong>The Collision Shop Detroit</strong> has to offer, why would anyone go anywhere else? Call us today at <strong>
-                            <a class="phone" href="tel:<?php $this->info("phone"); ?>">
-                            <?php $this->info("phone"); ?> </a></strong>.
+                            <strong>The Collision Shop Detroit</strong> has to offer, why would anyone go anywhere else?
+                            Call us today at <strong>
+                                <a class="phone" href="tel:<?php $this->info("phone"); ?>">
+                                    <?php $this->info("phone"); ?>
+                                </a></strong>.
                         </p>
                     </div>
 

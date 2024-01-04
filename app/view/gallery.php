@@ -46,6 +46,55 @@
 						</a>
 					</li>
 
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/7.jpg">
+							<img class="img-responsive" src="public/images/gallery/7.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/8.jpg">
+							<img class="img-responsive" src="public/images/gallery/8.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/9.jpg">
+							<img class="img-responsive" src="public/images/gallery/9.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/10.jpg">
+							<img class="img-responsive" src="public/images/gallery/10.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/11.jpg">
+							<img class="img-responsive" src="public/images/gallery/11.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/12.jpg">
+							<img class="img-responsive" src="public/images/gallery/12.jpg" alt="gallery">
+						</a>
+					</li>
+
+					<li>
+						<a data-fancybox-group="default" class="thumbnail fancy" title=""
+							href="public/images/gallery/13.jpg">
+							<img class="img-responsive" src="public/images/gallery/13.jpg" alt="gallery">
+						</a>
+					</li>
+
 				</ul>
 			</div>
 		</div>

@@ -48,9 +48,6 @@
 							<li <?php $this->helpers->isActiveMenu("home"); ?>><a class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>">HOME</a>
 							</li>
-							<li <?php $this->helpers->isActiveMenu("about"); ?>><a class="nav-link nav-link-fade-up"
-									href="<?php echo URL ?>about#content">ABOUT US</a></li>
-
 							<li class="dropup">
 								<button class="dropupbtn nav-link nav-link-fade-up" onclick="myFunction2()">SERVICES
 									<i class="fa fa-caret-up"></i>
@@ -65,7 +62,10 @@
 									<a href="<?php echo URL ?>auto-frame-repair#content">AUTO FRAME REPAIR</a>
 								</div>
 							</li>
-
+							<li <?php $this->helpers->isActiveMenu("faq"); ?>><a class="nav-link nav-link-fade-up"
+									href="<?php echo URL ?>faq#content">FAQ</a></li>
+							<li <?php $this->helpers->isActiveMenu("insurance"); ?>><a class="nav-link nav-link-fade-up"
+									href="<?php echo URL ?>insurance#content">INSURANCE</a></li>
 							<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
 									class="nav-link nav-link-fade-up"
 									href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
